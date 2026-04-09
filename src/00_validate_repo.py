@@ -1,4 +1,4 @@
-"""Validate required repo files/folders exist."""
+"""Sanity check: course expects these paths to exist before grading."""
 
 from __future__ import annotations
 
@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 REQUIRED_PATHS = [
+    "README.md",
     "data/reviews_raw.jsonl",
     "data/reviews_clean.jsonl",
     "data/dataset_metadata.json",
@@ -34,6 +35,7 @@ REQUIRED_PATHS = [
     "src/07_tests_generate.py",
     "src/08_metrics.py",
     "src/run_all.py",
+    "src/00_validate_repo.py",
 ]
 
 
@@ -51,11 +53,13 @@ def main() -> int:
             missing.append(rel)
 
     if missing:
-        print("\nRepository validation complete: FAILED")
-        print(f"Missing {len(missing)} required path(s).")
+        print("\nRepository validation complete")
+        print("Something's missing — scroll up for MISSING.")
+        print(f"({len(missing)} path(s) not found.)")
         return 1
 
-    print("\nRepository validation complete: OK")
+    print("\nRepository validation complete")
+    print("Looks good, all required files are there.")
     return 0
 
 

@@ -1,0 +1,13 @@
+# Editor / local tooling (not course deliverables)
+.kiro/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Local env (API keys)
+.env
+.env.local
