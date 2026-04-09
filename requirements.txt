@@ -1,0 +1,5 @@
+google-play-scraper
+nltk
+num2words
+scikit-learn
+requests

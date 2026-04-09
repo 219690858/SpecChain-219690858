@@ -2,11 +2,152 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "App crashes and performance problems",
+      "review_ids": [
+        "rev_889a8581-6071-4048-a310-c26afb49795d",
+        "rev_b9ecbe4a-2951-476b-9c0b-d61a582b5c4f",
+        "rev_6d0be882-a490-435e-876f-372c830d84d9",
+        "rev_d4d23acc-aea2-43be-94e2-d0258793cd74",
+        "rev_d088eee2-e8c1-43fe-9175-0fbcb2212583",
+        "rev_5ca67763-7ccd-48f4-bd03-31960ae51990",
+        "rev_c6d23b22-290f-4f63-8e93-66a50f52fff1",
+        "rev_3dde7f59-d44f-40ba-9501-ab3a7de6f69d",
+        "rev_fde10934-2cf0-466c-a723-3ff1bcc28f86",
+        "rev_4186c0fd-47e1-43fe-bfd8-b0cfbb9d7894",
+        "rev_25fc9cf6-4b89-4665-bb0b-9e9a758f337f",
+        "rev_bc45f5d6-ff1f-4c25-8602-c9ee86737aad",
+        "rev_48d09379-ee23-4428-a349-982dc2e1e22a",
+        "rev_c171fe6e-2534-417a-92c9-731ec3febdfa",
+        "rev_3d3ce159-0ca2-4248-aa05-31af05260dc1",
+        "rev_e301f287-6ace-4d38-b67d-7c0cb3edb2c4",
+        "rev_bf7f3350-9f1f-45d8-ad56-3774ce48c445",
+        "rev_9e341390-dbfa-43a8-b712-6c810335b67e",
+        "rev_51235b67-391e-4556-9937-b43260c33023",
+        "rev_f8b17d4a-5ae6-43a8-b07a-2327d87fce43"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "with each update it is becoming more and more buggy. It crashes way too often and the lag before playing a session is way too much and irritating especially for a app meant for mediation",
+        "You been vibe coding this or something? Over the last few months the app has become slow and unresponsive... worked brilliantly when I first signed up."
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Subscription, paywall, and pricing complaints",
+      "review_ids": [
+        "rev_d642110c-ba7e-417d-9318-e3b052e89a6d",
+        "rev_fc36cf61-52aa-4982-b8e8-6b2010ad1486",
+        "rev_a818a7e5-8c84-4cd7-b69c-62513167aa73",
+        "rev_5dd05804-f714-43ec-88a1-dde44431fcbf",
+        "rev_a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+        "rev_2181f1b1-4f60-4fdd-b0bf-f13efd235d50",
+        "rev_13a27745-13c7-48f1-a372-6e5ee40be8e4",
+        "rev_5b05d887-0411-44dd-9a55-18e7aab9fad0",
+        "rev_b123078b-d515-4b62-9087-e14af9eddc0b",
+        "rev_0118ff10-6eae-49be-b183-91c1c467fcc6",
+        "rev_b30bb2c5-1318-4569-82a4-eba23f97d80f",
+        "rev_5dfb4d1c-331f-4387-93e1-1897240d7f8c",
+        "rev_f4e4a1b5-133e-42d9-940e-fe28b20975d3",
+        "rev_0bd92395-b2a4-45a1-8cd3-9ac1eedce04e",
+        "rev_1279a981-6e3f-457b-b6eb-4de986a84f1a",
+        "rev_d183894a-ff3f-45c9-b60d-c01ab85d0f05",
+        "rev_f2c2c497-b4bd-4eb5-aa6a-17f965497f85",
+        "rev_923efb48-3b6d-46d0-be48-3d51bc9f2d5c",
+        "rev_0cddb14a-bfc4-45c6-8a83-d8550334b8ad",
+        "rev_38148569-58ab-4035-85a9-e0fa5322fed4"
+      ],
+      "example_reviews": [
+        "99.999% of all content is locked behind a paywall.",
+        "sudden price increase, doubled cost, no in app notification of this change only found out after subscription renewed"
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Offline mode and downloads not working",
+      "review_ids": [
+        "rev_44aaaa54-5e2b-46bd-849b-ccdc0bc00bd7",
+        "rev_8303d3aa-b1d5-4b83-8940-c93ba57b10fb",
+        "rev_801923d5-fbc1-4623-9660-778684a67b4b",
+        "rev_2c0b3cf1-178d-4640-ac92-519329543a6f",
+        "rev_a633aadf-6efe-4f7c-ae92-3b6126f709f4",
+        "rev_0aca4c0a-6bf5-4415-9b9f-939607f0e8a7",
+        "rev_31c41a51-1d38-436d-ab14-335f02d76fab",
+        "rev_c6a0d0f8-3dac-4f70-bf87-1c69419f1fb7",
+        "rev_c16bee9b-be00-4909-90ee-493ebb191e8a",
+        "rev_49dc26f5-531d-460d-9bd8-b5a0e77ee419",
+        "rev_6505a842-62be-44b3-9a89-b89c2ba3116c",
+        "rev_167c2262-e4ce-41ef-92bf-c50e87d1f100",
+        "rev_1b47550f-ab5f-4b7c-aa8e-9339e55fae82",
+        "rev_541149e0-9f7f-4577-9938-d2bd6459819e",
+        "rev_e7b21bbb-4828-4680-b13a-c8697421ceaa",
+        "rev_3674e169-07b4-446b-9026-ae81dddf1b97",
+        "rev_586d2523-28f6-485c-beff-88ff86c3ae19",
+        "rev_f22ba192-fc39-4774-a95b-db89a6394c4e",
+        "rev_573b79d6-d0bd-4030-96f9-ede8260b9021",
+        "rev_9d777b7d-f1dd-41e1-86df-7eaac767c65a"
+      ],
+      "example_reviews": [
+        "Your latest update yet again nuked my download section, it's all empty while the apps is taking up 4gb data. So those downloads are still there just not being listed.",
+        "*edit* App randomly decided to delete all my downloaded sleep meditations... app won't let me listen to downloaded offline content when I'm offline like before."
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Login, account access, and recurring error messages",
+      "review_ids": [
+        "rev_024e0f53-5a98-4f5f-b0a1-baff710a886e",
+        "rev_c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "rev_cd8c6375-a9e0-4140-957a-25fbf4096829",
+        "rev_82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "rev_25c5f717-338e-4e43-916e-db9063978230",
+        "rev_642a0efc-d8da-4949-b9bf-97a7ad903b79",
+        "rev_e02d8536-8846-493c-b677-f75a77be5cc2",
+        "rev_2b18ee9b-5580-4344-ae9f-6af752ed723a",
+        "rev_a78aa259-c4cf-4041-9208-085e5e18f464",
+        "rev_4f9050c3-c1d3-4e13-a2e9-6ad8dafa1fd9",
+        "rev_cc69a4b8-d473-4cb9-b2ed-8413f3fdd153",
+        "rev_15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+        "rev_609a41b3-5067-4f5e-bcf1-bdaf30b6de60",
+        "rev_b1e748f3-ceb4-458d-8379-4122958619e8",
+        "rev_0a0679be-59b2-480a-bacc-dea6ef4c7f97",
+        "rev_c6170462-c39d-4bd2-a786-71e9eabda099",
+        "rev_88c15a57-e640-4c88-992d-3330e6075c22",
+        "rev_35e7fb9e-9141-43d1-9ca8-d8dc17ab0fae",
+        "rev_3f5a0e37-4aeb-4688-abf2-d437ed12faac",
+        "rev_423da067-2514-48e0-a31e-e673d766915e"
+      ],
+      "example_reviews": [
+        "Changed phones and can't log in - asked for help, support has been working on it since January.",
+        "I have been stuck on an endless loop trying to log in to my old account."
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "UI/navigation issues and feature requests",
+      "review_ids": [
+        "rev_81102829-bb41-429d-be2c-1679ab6e3593",
+        "rev_a87c08c2-155e-4769-8a94-be20322bf4a9",
+        "rev_fd4c9318-2bf5-48a8-b26c-f282e0ebd5ae",
+        "rev_73496ae8-9050-4c58-b4de-8c6be4ffe6d3",
+        "rev_ef71b542-c602-4bd8-8d86-7f89d86e5269",
+        "rev_080ce8bf-c700-4334-be7a-94aee09b6473",
+        "rev_ae298f59-5f11-48f8-ac92-fcbc627b9a07",
+        "rev_2ad429bf-faeb-4c57-85be-2a1f8751f857",
+        "rev_248efbef-d097-418d-9a82-949dedc2d8fa",
+        "rev_b750c41e-9d38-4c4c-86b8-b6c9a6debe5f",
+        "rev_c9c6447a-90f3-43fd-ab78-23e1b3e4db2e",
+        "rev_af2723a3-04f8-447f-9ca4-7693eb9caf1b",
+        "rev_29d54e6c-8d47-4285-8571-b62cfb9fc5c6",
+        "rev_25403e5b-41e1-4fe0-ad05-e724237cb319",
+        "rev_b26f8e1d-1b21-4f0b-bbd4-beb939289c04",
+        "rev_24138823-e4ce-4fa4-bbb2-cc08bf2354eb",
+        "rev_f2200241-8d3f-4dda-a46b-8111e352503e",
+        "rev_362dda58-6651-4abb-9716-af451daf05f2",
+        "rev_2520bc93-1bc7-4205-af44-ef88a2dfb2f4",
+        "rev_fa4d2c9f-b715-4b80-ad93-37c7e349dfb1"
+      ],
+      "example_reviews": [
+        "I had been a longtime user of this app and absolutely loved it... have lately been discontent over the ui. It has way too much content and is super cluttered.",
+        "Good app, but please please make a setting to turn off the haptic feedback when I press on buttons. I really don't like the sensation when I'm trying to relax."
       ]
     }
   ]}

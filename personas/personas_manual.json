@@ -1,22 +1,159 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "Daily Meditation Subscriber",
+      "description": "A paying user who uses Headspace almost every day (meditation/sleep) and just wants the app to work smoothly.",
       "derived_from_group": "G1",
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Finish a session without it stopping",
+        "Open the app and start a session quickly",
+        "Not lose progress or get kicked out mid-session"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
+        "The app crashes/freezes during a session",
+        "It loads slowly or lags before playing",
+        "The experience breaks the relaxation flow"
+      ],
       "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
+        "Often used at night or when stressed",
+        "Sometimes switches to other apps (music/YouTube) and comes back",
+        "Notices problems after updates"
+      ],
       "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
+        "Playback must be stable",
+        "Crashes/lag should not happen during sessions"
+      ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "rev_6d0be882-a490-435e-876f-372c830d84d9",
+        "rev_d4d23acc-aea2-43be-94e2-d0258793cd74",
+        "rev_fde10934-2cf0-466c-a723-3ff1bcc28f86",
+        "rev_bc45f5d6-ff1f-4c25-8602-c9ee86737aad"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Price-Sensitive User Considering Subscription",
+      "description": "A user who wants mindfulness help but feels the app is too expensive or too paywalled.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Know what is free vs paid before paying",
+        "Avoid surprise charges/renewals",
+        "Decide if the subscription is worth it"
+      ],
+      "pain_points": [
+        "Too much content is locked",
+        "Price changes/renewals are not clear",
+        "Refund/cancel feels hard or unfair"
+      ],
+      "context": [
+        "Tries the app with a free trial or limited free content",
+        "Has a limited budget",
+        "Might switch to another app if it feels not worth it"
+      ],
+      "constraints": [
+        "Billing/renewal info must be clear",
+        "The app should not trick users into paying"
+      ],
+      "evidence_reviews": [
+        "rev_a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+        "rev_a818a7e5-8c84-4cd7-b69c-62513167aa73",
+        "rev_5dd05804-f714-43ec-88a1-dde44431fcbf",
+        "rev_13a27745-13c7-48f1-a372-6e5ee40be8e4"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Offline Listener and Downloader",
+      "description": "A user who downloads sessions/sleep content and expects offline mode to actually work.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Download content for offline use",
+        "Play downloads without internet",
+        "Keep downloads available after updates/restarts"
+      ],
+      "pain_points": [
+        "Downloads disappear or show empty",
+        "Offline playback still fails",
+        "Sleepcasts stop/crash in the middle"
+      ],
+      "context": [
+        "Uses the app while traveling or with weak internet",
+        "Often listens at bedtime",
+        "Tries reinstall/cache clear/re-download but it still breaks"
+      ],
+      "constraints": [
+        "Offline playback should not need internet",
+        "Downloads should not randomly disappear"
+      ],
+      "evidence_reviews": [
+        "rev_44aaaa54-5e2b-46bd-849b-ccdc0bc00bd7",
+        "rev_2c0b3cf1-178d-4640-ac92-519329543a6f",
+        "rev_a633aadf-6efe-4f7c-ae92-3b6126f709f4",
+        "rev_801923d5-fbc1-4623-9660-778684a67b4b"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Returning User with Account/Access Issues",
+      "description": "A returning/long-time user who can’t log in or keeps seeing errors, even though they have an active subscription.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Log in to the correct old account",
+        "Access paid sessions they already subscribed to",
+        "Stop getting blocked by repeated errors"
+      ],
+      "pain_points": [
+        "Login loops / wrong account / gets logged out",
+        "Error messages stop them from opening content",
+        "Some features/integrations don’t work (history/linking)"
+      ],
+      "context": [
+        "Changed phones or reinstalled the app",
+        "Needs the app for support but can’t access it",
+        "Talks to support but it takes too long"
+      ],
+      "constraints": [
+        "Login/account recovery should be simple",
+        "Active subscribers should not be locked out"
+      ],
+      "evidence_reviews": [
+        "rev_c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "rev_cd8c6375-a9e0-4140-957a-25fbf4096829",
+        "rev_82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "rev_15fe4b34-503e-4209-905f-1ebf4f5af7e7"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "UX-Focused User Seeking Simplicity",
+      "description": "A user who wants a calm/simple app: easy navigation, less clutter, and small settings that reduce annoyance.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Find a course/session and continue where they left off",
+        "Navigate without clutter or missing buttons",
+        "Adjust small settings (like haptics) to avoid distraction"
+      ],
+      "pain_points": [
+        "UI is cluttered and hard to find things",
+        "Buttons/sections sometimes missing from menus",
+        "Notifications/flows are confusing or easy to miss"
+      ],
+      "context": [
+        "Uses the app to relax and avoid extra stimulation",
+        "Wants to track progress and continue a pathway",
+        "Prefers a simpler interface over lots of new content"
+      ],
+      "constraints": [
+        "Navigation should stay consistent after updates",
+        "Settings should reduce friction during relaxation"
+      ],
+      "evidence_reviews": [
+        "rev_a87c08c2-155e-4769-8a94-be20322bf4a9",
+        "rev_81102829-bb41-429d-be2c-1679ab6e3593",
+        "rev_73496ae8-9050-4c58-b4de-8c6be4ffe6d3",
+        "rev_ef71b542-c602-4bd8-8d86-7f89d86e5269"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "personas": [
+    {
+      "id": "P_auto_1",
+      "name": "Frustrated Mobile User",
+      "description": "A user experiencing frequent app crashes and freezing issues, seeking a stable and compatible meditation app.",
+      "derived_from_group": "A1",
+      "goals": [
+        "Use a meditation app without interruptions",
+        "Track progress with Google Fit"
+      ],
+      "pain_points": [
+        "App crashes mid-session",
+        "Incompatibility with certain devices"
+      ],
+      "context": [
+        "Using a Motorola G86 device",
+        "Trying to integrate with Google Fit"
+      ],
+      "constraints": [
+        "Limited technical expertise to troubleshoot issues"
+      ],
+      "evidence_reviews": [
+        "rev_4dcc7bb3-c49a-49d2-b7dd-4b6f11abc8d8",
+        "rev_882ebd9a-ebb4-449f-b365-94ac1fce6669"
+      ]
+    },
+    {
+      "id": "P_auto_2",
+      "name": "Frustrated Audio Enthusiast",
+      "description": "A user seeking a meditative experience through an app, but is hindered by performance issues.",
+      "derived_from_group": "A2",
+      "goals": [
+        "Enjoy a seamless and meditative audio experience"
+      ],
+      "pain_points": [
+        "App crashes and bugs disrupt the experience",
+        "Audio stream loss"
+      ],
+      "context": [
+        "Using the app for relaxation and meditation"
+      ],
+      "constraints": [
+        "Cannot trust the app due to inconsistencies"
+      ],
+      "evidence_reviews": [
+        "rev_adb047ca-e012-4ebe-9426-78aac223f321",
+        "rev_2ed91fbf-1629-45fa-abb1-44d4b6781201"
+      ]
+    },
+    {
+      "id": "P_auto_3",
+      "name": "Frustrated Mindfulness Seeker",
+      "description": "A person seeking mindfulness and stress relief through meditation apps, frustrated by intermittent functionality.",
+      "derived_from_group": "A3",
+      "goals": [
+        "Find effective meditation and stress relief tools"
+      ],
+      "pain_points": [
+        "Intermittent functionality of key features like white noise and binaural beats"
+      ],
+      "context": [
+        "Heavy usage of meditation apps for stress relief"
+      ],
+      "constraints": [
+        "Reliability issues with app features"
+      ],
+      "evidence_reviews": [
+        "rev_923efb48-3b6d-46d0-be48-3d51bc9f2d5c",
+        "rev_0b398939-b4c1-4698-8f1b-5877ee96969d"
+      ]
+    },
+    {
+      "id": "P_auto_4",
+      "name": "Frustrated Meditation Enthusiast",
+      "description": "A meditation enthusiast who is frustrated with the app's performance issues and excessive email spam.",
+      "derived_from_group": "A4",
+      "goals": [
+        "To use a meditation app that works seamlessly and provides a range of options"
+      ],
+      "pain_points": [
+        "App performance issues",
+        "Excessive email spam"
+      ],
+      "context": [
+        "Using a Samsung S25 Ultra",
+        "Interested in in-person counseling"
+      ],
+      "constraints": [
+        "Technical issues with the app",
+        "Overwhelming email notifications"
+      ],
+      "evidence_reviews": [
+        "rev_ecc2ca0f-7c36-4563-91cc-666de3b5e895",
+        "rev_b625a871-1ae6-47df-84c8-58974ae11fe1"
+      ]
+    },
+    {
+      "id": "P_auto_5",
+      "name": "Frustrated Technical User",
+      "description": "A user experiencing technical difficulties with login and connectivity issues despite having a stable internet connection.",
+      "derived_from_group": "A5",
+      "goals": [
+        "To access and utilize the app's features without technical issues"
+      ],
+      "pain_points": [
+        "Frequent logout issues",
+        "Error messages indicating offline status when connected",
+        "Difficulty logging in through linked accounts"
+      ],
+      "context": [
+        "Using the app with a stable internet connection",
+        "Linked to Google account or using email login"
+      ],
+      "constraints": [
+        "Technical issues hindering app usage",
+        "Lack of effective error resolution"
+      ],
+      "evidence_reviews": [
+        "rev_08a446f9-9ab0-4eb6-858f-5d2c30377738",
+        "rev_9f4a1340-3120-487a-947e-90a8decbfc18"
+      ]
+    }
+  ]
+}

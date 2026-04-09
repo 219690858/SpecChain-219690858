@@ -1,35 +1,41 @@
 {
-  "manual": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 10,
-    "traceability_links": 12,
-    "review_coverage": 0.63,
-    "traceability_ratio": 0.87,
-    "testability_rate": 0.75,
-    "ambiguity_ratio": 0.12
-  },
-  "automated": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 10,
-    "traceability_links": 12,
-    "review_coverage": 0.65,
-    "traceability_ratio": 0.88,
-    "testability_rate": 0.80, 
-    "ambiguity_ratio": 0.12
-  },
-  "hybrid": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 9,
-    "traceability_links": 12,
-    "review_coverage": 0.67,
-    "traceability_ratio": 0.88,
-    "testability_rate": 0.87, 
-    "ambiguity_ratio": 0.12
+  "dataset_size": 1110,
+  "pipelines": {
+    "manual": {
+      "pipeline": "manual",
+      "dataset_size": 1110,
+      "persona_count": 5,
+      "requirements_count": 12,
+      "tests_count": 24,
+      "traceability_links": 141,
+      "review_coverage": 0.0901,
+      "traceability_ratio": 1.0,
+      "testability_rate": 1.0,
+      "ambiguity_ratio": 0.0
+    },
+    "automated": {
+      "pipeline": "automated",
+      "dataset_size": 1110,
+      "persona_count": 5,
+      "requirements_count": 11,
+      "tests_count": 22,
+      "traceability_links": 1148,
+      "review_coverage": 1.0,
+      "traceability_ratio": 1.0,
+      "testability_rate": 1.0,
+      "ambiguity_ratio": 0.0
+    },
+    "hybrid": {
+      "pipeline": "hybrid",
+      "dataset_size": 1110,
+      "persona_count": 1,
+      "requirements_count": 0,
+      "tests_count": 1,
+      "traceability_links": 6,
+      "review_coverage": 0.0036,
+      "traceability_ratio": 0.0,
+      "testability_rate": 0.0,
+      "ambiguity_ratio": 0.0
+    }
   }
 }

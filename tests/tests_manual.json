@@ -1,16 +1,281 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T_manual_1",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Meditation plays 10 minutes (no crash/freeze)",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Open the app",
+        "Open any meditation session",
+        "Press play",
+        "Keep the session playing for 10 minutes"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The session keeps playing for 10 minutes and the app does not crash or freeze."
+    },
+    {
+      "test_id": "T_manual_2",
+      "requirement_id": "FR1",
+      "scenario": "Sleep session plays 10 minutes (no crash/freeze)",
+      "steps": [
+        "Open the app",
+        "Open any sleep session (e.g., sleepcast)",
+        "Press play",
+        "Keep the session playing for 10 minutes"
+      ],
+      "expected_result": "The session keeps playing for 10 minutes and the app does not crash or freeze."
+    },
+    {
+      "test_id": "T_manual_3",
+      "requirement_id": "FR2",
+      "scenario": "Open app and start session within 5 seconds",
+      "steps": [
+        "Force close the app",
+        "Launch the app",
+        "Wait for the home screen to become usable",
+        "Tap a session and press play"
+      ],
+      "expected_result": "The home screen is usable and the user can start a session within 5 seconds."
+    },
+    {
+      "test_id": "T_manual_4",
+      "requirement_id": "FR2",
+      "scenario": "Cold start is not slow (within 5 seconds)",
+      "steps": [
+        "Restart the phone (or clear app from recent apps)",
+        "Launch the app on a typical Wi-Fi or cellular network",
+        "Attempt to open a session from the home screen"
+      ],
+      "expected_result": "From opening the app, the user can reach a playable session within 5 seconds (no major lag)."
+    },
+    {
+      "test_id": "T_manual_5",
+      "requirement_id": "FR3",
+      "scenario": "Locked content is labeled in browse list",
+      "steps": [
+        "Open the app",
+        "Browse courses/sessions",
+        "Find an item that requires subscription"
+      ],
+      "expected_result": "The item shows a clear label like “subscription required” before the user selects it."
+    },
+    {
+      "test_id": "T_manual_6",
+      "requirement_id": "FR3",
+      "scenario": "Locked content is labeled on details screen",
+      "steps": [
+        "Open the app",
+        "Open the details page for a paid/locked item",
+        "Look for access status indicators"
+      ],
+      "expected_result": "The details screen clearly shows it needs a subscription before the user tries to play it."
+    },
+    {
+      "test_id": "T_manual_7",
+      "requirement_id": "FR4",
+      "scenario": "Before paying, price + renewal details are shown",
+      "steps": [
+        "Open the subscription purchase flow",
+        "Navigate to the final confirmation screen",
+        "Review the purchase details"
+      ],
+      "expected_result": "Price, billing period (monthly/yearly), and renewal date are shown on the same screen before confirming."
+    },
+    {
+      "test_id": "T_manual_8",
+      "requirement_id": "FR4",
+      "scenario": "Renewal details are visible (existing subscriber)",
+      "steps": [
+        "Use an account with an active subscription",
+        "Open subscription management inside the app (if available)",
+        "Locate renewal information"
+      ],
+      "expected_result": "Price/billing period and next renewal date are shown clearly before any renewal confirmation."
+    },
+    {
+      "test_id": "T_manual_9",
+      "requirement_id": "FR5",
+      "scenario": "Cancellation instructions exist in settings",
+      "steps": [
+        "Log in with an account that has an active subscription",
+        "Open Account or Subscription settings",
+        "Look for cancellation instructions"
+      ],
+      "expected_result": "The settings area shows clear cancellation instructions."
+    },
+    {
+      "test_id": "T_manual_10",
+      "requirement_id": "FR5",
+      "scenario": "Settings has a link to Google Play subscription management",
+      "steps": [
+        "Log in with an account that has an active subscription",
+        "Open Account or Subscription settings",
+        "Select the option to manage/cancel subscription"
+      ],
+      "expected_result": "Tapping the link opens Google Play’s subscription management page for Headspace."
+    },
+    {
+      "test_id": "T_manual_11",
+      "requirement_id": "FR6",
+      "scenario": "Download stays after restart",
+      "steps": [
+        "Open the app",
+        "Download a session",
+        "Force close the app",
+        "Reopen the app",
+        "Open the Downloads section"
+      ],
+      "expected_result": "The downloaded session still appears in the Downloads list after reopening the app."
+    },
+    {
+      "test_id": "T_manual_12",
+      "requirement_id": "FR6",
+      "scenario": "Two downloads stay after restart",
+      "steps": [
+        "Open the app",
+        "Download two different sessions",
+        "Close and reopen the app",
+        "Open the Downloads section"
+      ],
+      "expected_result": "Both downloaded sessions still appear in the Downloads list after reopening the app."
+    },
+    {
+      "test_id": "T_manual_13",
+      "requirement_id": "FR7",
+      "scenario": "Offline playback works (airplane mode)",
+      "steps": [
+        "Download a session",
+        "Enable airplane mode",
+        "Open the app",
+        "Play the downloaded session"
+      ],
+      "expected_result": "The downloaded session plays from start to finish and no offline error is shown."
+    },
+    {
+      "test_id": "T_manual_14",
+      "requirement_id": "FR7",
+      "scenario": "Offline playback works (no Wi‑Fi/mobile data)",
+      "steps": [
+        "Download a session",
+        "Disable Wi-Fi and mobile data",
+        "Open the app",
+        "Play the downloaded session"
+      ],
+      "expected_result": "The session plays successfully without any network connectivity."
+    },
+    {
+      "test_id": "T_manual_15",
+      "requirement_id": "FR8",
+      "scenario": "Login works with valid credentials (no loop)",
+      "steps": [
+        "Open the app",
+        "Go to login screen",
+        "Enter valid credentials",
+        "Submit login"
+      ],
+      "expected_result": "The user gets signed in and is not bounced back to the login screen."
+    },
+    {
+      "test_id": "T_manual_16",
+      "requirement_id": "FR8",
+      "scenario": "Stay signed in after reopening",
+      "steps": [
+        "Log in with valid credentials",
+        "Close the app",
+        "Reopen the app"
+      ],
+      "expected_result": "After reopening the app, the user is still signed in (no forced relogin)."
+    },
+    {
+      "test_id": "T_manual_17",
+      "requirement_id": "FR9",
+      "scenario": "Paid content works for active subscriber",
+      "steps": [
+        "Log in with an active subscription account",
+        "Open a paid/locked session",
+        "Attempt to play the session"
+      ],
+      "expected_result": "The session opens and plays, and there is no wrong subscription error."
+    },
+    {
+      "test_id": "T_manual_18",
+      "requirement_id": "FR9",
+      "scenario": "No blocking “already have a subscription” error",
+      "steps": [
+        "Log in with an active subscription account",
+        "Navigate to paid content",
+        "Confirm access is granted"
+      ],
+      "expected_result": "The app does not show a blocking message like “already have a subscription”, and access is allowed."
+    },
+    {
+      "test_id": "T_manual_19",
+      "requirement_id": "FR10",
+      "scenario": "“Continue” shows up after starting a course",
+      "steps": [
+        "Open the app",
+        "Start a course/session",
+        "Close the app",
+        "Reopen the app"
+      ],
+      "expected_result": "A “Continue” option shows up on the home screen (or another obvious place)."
+    },
+    {
+      "test_id": "T_manual_20",
+      "requirement_id": "FR10",
+      "scenario": "“Continue” resumes the next step",
+      "steps": [
+        "Open the app",
+        "Start a course and complete one step/session",
+        "Return to home screen",
+        "Tap “Continue”"
+      ],
+      "expected_result": "The app resumes the correct next step/session in the same course."
+    },
+    {
+      "test_id": "T_manual_21",
+      "requirement_id": "FR11",
+      "scenario": "Care button reachable within 2 taps",
+      "steps": [
+        "Open the app",
+        "Open the main menu",
+        "Try to locate the Care button"
+      ],
+      "expected_result": "The Care button is visible and can be opened within 2 taps."
+    },
+    {
+      "test_id": "T_manual_22",
+      "requirement_id": "FR11",
+      "scenario": "Support chat reachable within 2 taps",
+      "steps": [
+        "Open the app",
+        "Open the main menu",
+        "Try to locate support chat"
+      ],
+      "expected_result": "Support chat is visible and can be opened within 2 taps."
+    },
+    {
+      "test_id": "T_manual_23",
+      "requirement_id": "FR12",
+      "scenario": "Turn off haptics and confirm no vibration",
+      "steps": [
+        "Open the app",
+        "Go to settings",
+        "Disable haptic feedback",
+        "Tap multiple buttons in different screens"
+      ],
+      "expected_result": "No haptic feedback happens when buttons are tapped."
+    },
+    {
+      "test_id": "T_manual_24",
+      "requirement_id": "FR12",
+      "scenario": "Turn haptics back on (control test)",
+      "steps": [
+        "Open the app",
+        "Go to settings",
+        "Enable haptic feedback",
+        "Tap a button"
+      ],
+      "expected_result": "Haptic feedback happens when the user taps buttons (so the setting works)."
     }
   ]
 }
