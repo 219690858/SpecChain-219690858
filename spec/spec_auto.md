@@ -34,7 +34,7 @@
 - Description: [The app shall allow users to download meditation sessions for offline access within 10 seconds of tapping the download button.]
 - Source Persona: [Frustrated Tech Troubleshooter]
 - Traceability: [Derived from review group A1]
-- Acceptance Criteria: [Given the app is launched and the user has a stable internet connection, When they tap the download button for a meditation session, Then the session is downloaded within 10 seconds for offline access.]
+- Acceptance Criteria: [Given the app is launched and the user has an active internet connection, When they tap the download button for a meditation session, Then the session is downloaded within 10 seconds for offline access.]
 
 ## Requirement ID: FR_auto_7
 - Description: [The app shall not experience login loops or subscription access errors more than 2 times in a row.]
