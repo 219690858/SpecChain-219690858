@@ -23,7 +23,7 @@
       "review_coverage": 1.0,
       "traceability_ratio": 1.0,
       "testability_rate": 1.0,
-      "ambiguity_ratio": 0.0
+      "ambiguity_ratio": 0.0909
     },
     "hybrid": {
       "pipeline": "hybrid",

@@ -1,67 +1,67 @@
 # Automated Specification (Headspace)
 
 ## Requirement ID: FR_auto_1
-- Description: [The app shall not crash or freeze during meditation sessions.]
-- Source Persona: [Frustrated Mobile User]
+- Description: [The app shall not crash or freeze when navigating to the meditation session screen within 5 seconds of tapping the 'Start Meditation' button.]
+- Source Persona: [Frustrated Tech Troubleshooter]
 - Traceability: [Derived from review group A1]
-- Acceptance Criteria: [Given the app is in use on a Motorola G86 device, When a meditation session is started, Then the app shall not crash or freeze for at least 30 minutes.]
+- Acceptance Criteria: [Given the app is launched on a compatible device, When the user taps the 'Start Meditation' button, Then the meditation session screen is displayed within 5 seconds without crashing or freezing.]
 
 ## Requirement ID: FR_auto_2
-- Description: [The app shall load meditation sessions within 5 seconds of initiating a session.]
-- Source Persona: [Frustrated Audio Enthusiast]
+- Description: [The app shall display a clear error message within 2 seconds when a user encounters a playback error during a meditation session.]
+- Source Persona: [Frustrated Speed Seeker]
 - Traceability: [Derived from review group A2]
-- Acceptance Criteria: [Given the app is launched on a compatible device, When a user selects a meditation session, Then the session shall start playing within 5 seconds.]
+- Acceptance Criteria: [Given the app is playing a meditation session, When a playback error occurs, Then an error message is displayed within 2 seconds indicating the issue and suggesting a solution.]
 
 ## Requirement ID: FR_auto_3
-- Description: [The app shall provide offline access to downloaded meditation sessions.]
-- Source Persona: [Frustrated Mindfulness Seeker]
+- Description: [The app shall allow users to access their meditation progress and history within 3 taps from the main screen.]
+- Source Persona: [Disappointed Headspace User]
 - Traceability: [Derived from review group A3]
-- Acceptance Criteria: [Given a user has downloaded meditation sessions, When the device is offline, Then the user shall be able to access and play the downloaded sessions for at least 24 hours.]
+- Acceptance Criteria: [Given the app is launched, When the user navigates from the main screen, Then they can access their meditation progress and history within 3 taps.]
 
 ## Requirement ID: FR_auto_4
-- Description: [The app shall not stop playback unexpectedly during meditation sessions.]
-- Source Persona: [Frustrated Audio Enthusiast]
-- Traceability: [Derived from review group A2]
-- Acceptance Criteria: [Given a meditation session is playing, When the device is locked or the app is minimized, Then the session shall continue playing for at least 30 minutes without interruption.]
+- Description: [The app shall provide an option to turn off haptic feedback within the settings screen, and the change shall take effect within 1 second.]
+- Source Persona: [Frustrated Meditator Fiona]
+- Traceability: [Derived from review group A4]
+- Acceptance Criteria: [Given the app is launched, When the user navigates to the settings screen and toggles off haptic feedback, Then the change takes effect within 1 second.]
 
 ## Requirement ID: FR_auto_5
-- Description: [The app shall allow users to log in without encountering login loops.]
-- Source Persona: [Frustrated Technical User]
+- Description: [The app shall display a clear paywall with subscription options within 2 seconds when a user attempts to access premium content without a subscription.]
+- Source Persona: [Frustrated Tech User]
 - Traceability: [Derived from review group A5]
-- Acceptance Criteria: [Given a user attempts to log in through a linked account or email, When the credentials are correct, Then the user shall be logged in successfully within 10 seconds.]
+- Acceptance Criteria: [Given the app is launched and the user attempts to access premium content without a subscription, When the paywall is displayed, Then it is clear and displayed within 2 seconds.]
 
 ## Requirement ID: FR_auto_6
-- Description: [The app shall display clear information about subscription access and paywall.]
-- Source Persona: [Frustrated Meditation Enthusiast]
-- Traceability: [Derived from review group A4]
-- Acceptance Criteria: [Given a user views the app's subscription options, When the user is not subscribed, Then the app shall display a clear message explaining the benefits and costs of subscription within 2 seconds.]
+- Description: [The app shall allow users to download meditation sessions for offline access within 10 seconds of tapping the download button.]
+- Source Persona: [Frustrated Tech Troubleshooter]
+- Traceability: [Derived from review group A1]
+- Acceptance Criteria: [Given the app is launched and the user has a stable internet connection, When they tap the download button for a meditation session, Then the session is downloaded within 10 seconds for offline access.]
 
 ## Requirement ID: FR_auto_7
-- Description: [The app shall allow users to navigate and continue progress without issues.]
-- Source Persona: [Frustrated Mindfulness Seeker]
+- Description: [The app shall not experience login loops or subscription access errors more than 2 times in a row.]
+- Source Persona: [Disappointed Headspace User]
 - Traceability: [Derived from review group A3]
-- Acceptance Criteria: [Given a user has started a meditation session, When the user navigates away from the session, Then the user shall be able to return to the session and continue from where they left off within 10 seconds.]
+- Acceptance Criteria: [Given the app is launched and the user attempts to log in or access their subscription, When an error occurs, Then it does not repeat more than 2 times in a row.]
 
 ## Requirement ID: FR_auto_8
-- Description: [The app shall provide an option to turn off haptics.]
-- Source Persona: [Frustrated Mobile User]
-- Traceability: [Derived from review group A1]
-- Acceptance Criteria: [Given the app's settings menu is accessed, When the user selects the option to turn off haptics, Then haptics shall be disabled immediately.]
+- Description: [The app shall display a loading animation for no more than 5 seconds when loading meditation sessions.]
+- Source Persona: [Frustrated Speed Seeker]
+- Traceability: [Derived from review group A2]
+- Acceptance Criteria: [Given the app is launched and loading meditation sessions, When the loading animation is displayed, Then it does not exceed 5 seconds.]
 
 ## Requirement ID: FR_auto_9
-- Description: [The app shall display a clear error message when subscription access errors occur.]
-- Source Persona: [Frustrated Technical User]
-- Traceability: [Derived from review group A5]
-- Acceptance Criteria: [Given a subscription access error occurs, When the user views the error message, Then the message shall clearly explain the cause and potential resolution within 5 seconds.]
+- Description: [The app shall provide a clear and visible option to continue a meditation session from where the user left off within 2 taps.]
+- Source Persona: [Frustrated Meditator Fiona]
+- Traceability: [Derived from review group A4]
+- Acceptance Criteria: [Given the app is launched and the user has previously started a meditation session, When they navigate to the meditation screen, Then they can continue the session from where they left off within 2 taps.]
 
 ## Requirement ID: FR_auto_10
-- Description: [The app shall not display excessive email spam.]
-- Source Persona: [Frustrated Meditation Enthusiast]
-- Traceability: [Derived from review group A4]
-- Acceptance Criteria: [Given a user has opted out of promotional emails, When the app sends emails, Then the user shall receive no more than 2 emails per week.]
+- Description: [The app shall not stop playback of a meditation session for more than 2 seconds when the device screen is turned off or locked.]
+- Source Persona: [Frustrated Tech User]
+- Traceability: [Derived from review group A5]
+- Acceptance Criteria: [Given the app is playing a meditation session, When the device screen is turned off or locked, Then playback does not stop for more than 2 seconds.]
 
 ## Requirement ID: FR_auto_11
-- Description: [The app shall handle login through linked accounts without errors.]
-- Source Persona: [Frustrated Technical User]
-- Traceability: [Derived from review group A5]
-- Acceptance Criteria: [Given a user attempts to log in through a linked account, When the credentials are correct, Then the user shall be logged in successfully within 5 seconds.]
+- Description: [The app shall display a clear message indicating that a meditation session is not available for offline access within 2 seconds of attempting to play it.]
+- Source Persona: [Frustrated Tech Troubleshooter]
+- Traceability: [Derived from review group A1]
+- Acceptance Criteria: [Given the app is launched and a user attempts to play a meditation session without an internet connection, When the session is not available for offline access, Then a clear message is displayed within 2 seconds.]

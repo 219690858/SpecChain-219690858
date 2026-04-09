@@ -3,240 +3,238 @@
     {
       "test_id": "T_auto_1_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Meditation session on Motorola G86 device",
+      "scenario": "Navigation to meditation session screen",
       "steps": [
-        "Launch the app on a Motorola G86 device",
-        "Start a meditation session",
-        "Verify the app does not crash or freeze for at least 30 minutes"
+        "Launch the app",
+        "Tap the 'Start Meditation' button"
       ],
-      "expected_result": "The app does not crash or freeze during the meditation session"
+      "expected_result": "The meditation session screen is displayed within 5 seconds without crashing or freezing."
     },
     {
       "test_id": "T_auto_1_2",
       "requirement_id": "FR_auto_1",
-      "scenario": "Meditation session with multiple interruptions",
+      "scenario": "App stability under stress",
       "steps": [
-        "Launch the app on a Motorola G86 device",
-        "Start a meditation session",
-        "Lock and unlock the device multiple times",
-        "Minimize and maximize the app multiple times",
-        "Verify the app does not crash or freeze"
+        "Launch the app",
+        "Rapidly tap the 'Start Meditation' button multiple times"
       ],
-      "expected_result": "The app remains stable and does not crash or freeze"
+      "expected_result": "The app does not crash or freeze and the meditation session screen is displayed within 5 seconds."
     },
     {
       "test_id": "T_auto_2_1",
       "requirement_id": "FR_auto_2",
-      "scenario": "Loading meditation session on compatible device",
+      "scenario": "Playback error during meditation session",
       "steps": [
-        "Launch the app on a compatible device",
-        "Select a meditation session",
-        "Measure the time it takes for the session to start playing"
+        "Launch the app",
+        "Start a meditation session",
+        "Simulate a playback error"
       ],
-      "expected_result": "The meditation session starts playing within 5 seconds"
+      "expected_result": "An error message is displayed within 2 seconds indicating the issue and suggesting a solution."
     },
     {
       "test_id": "T_auto_2_2",
       "requirement_id": "FR_auto_2",
-      "scenario": "Loading meditation session on slow device",
+      "scenario": "Repeated playback errors",
       "steps": [
-        "Launch the app on a slow device",
-        "Select a meditation session",
-        "Measure the time it takes for the session to start playing"
+        "Launch the app",
+        "Start a meditation session",
+        "Simulate multiple playback errors in a row"
       ],
-      "expected_result": "The meditation session starts playing within 5 seconds"
+      "expected_result": "An error message is displayed within 2 seconds for each error, indicating the issue and suggesting a solution."
     },
     {
       "test_id": "T_auto_3_1",
       "requirement_id": "FR_auto_3",
-      "scenario": "Offline access to downloaded meditation sessions",
+      "scenario": "Access meditation progress and history",
       "steps": [
-        "Download meditation sessions",
-        "Turn off device's internet connection",
-        "Access and play a downloaded meditation session"
+        "Launch the app",
+        "Navigate to main screen",
+        "Tap to access meditation progress and history"
       ],
-      "expected_result": "The user can access and play the downloaded session for at least 24 hours"
+      "expected_result": "Meditation progress and history are accessible within 3 taps from the main screen."
     },
     {
       "test_id": "T_auto_3_2",
       "requirement_id": "FR_auto_3",
-      "scenario": "Offline access after 24 hours",
+      "scenario": "Verify tap count",
       "steps": [
-        "Download meditation sessions",
-        "Turn off device's internet connection",
-        "Wait for 24 hours",
-        "Access and play a downloaded meditation session"
+        "Launch the app",
+        "Navigate to main screen",
+        "Count taps to access meditation progress and history"
       ],
-      "expected_result": "The user can still access and play the downloaded session"
+      "expected_result": "It takes no more than 3 taps to access meditation progress and history from the main screen."
     },
     {
       "test_id": "T_auto_4_1",
       "requirement_id": "FR_auto_4",
-      "scenario": "Playback during device lock",
+      "scenario": "Turn off haptic feedback",
       "steps": [
-        "Start a meditation session",
-        "Lock the device",
-        "Verify the session continues playing for at least 30 minutes"
+        "Launch the app",
+        "Navigate to settings screen",
+        "Toggle off haptic feedback"
       ],
-      "expected_result": "The session continues playing without interruption"
+      "expected_result": "The change takes effect within 1 second."
     },
     {
       "test_id": "T_auto_4_2",
       "requirement_id": "FR_auto_4",
-      "scenario": "Playback during app minimization",
+      "scenario": "Verify haptic feedback setting persistence",
       "steps": [
-        "Start a meditation session",
-        "Minimize the app",
-        "Verify the session continues playing for at least 30 minutes"
+        "Launch the app",
+        "Navigate to settings screen",
+        "Toggle off haptic feedback",
+        "Restart the app"
       ],
-      "expected_result": "The session continues playing without interruption"
+      "expected_result": "Haptic feedback remains off after app restart."
     },
     {
       "test_id": "T_auto_5_1",
       "requirement_id": "FR_auto_5",
-      "scenario": "Login through linked account",
+      "scenario": "Access premium content without subscription",
       "steps": [
-        "Attempt to log in through a linked account with correct credentials",
-        "Measure the time it takes to log in successfully"
+        "Launch the app",
+        "Attempt to access premium content without a subscription"
       ],
-      "expected_result": "The user logs in successfully within 10 seconds"
+      "expected_result": "A clear paywall with subscription options is displayed within 2 seconds."
     },
     {
       "test_id": "T_auto_5_2",
       "requirement_id": "FR_auto_5",
-      "scenario": "Login through email",
+      "scenario": "Verify paywall display time",
       "steps": [
-        "Attempt to log in through email with correct credentials",
-        "Measure the time it takes to log in successfully"
+        "Launch the app",
+        "Attempt to access premium content without a subscription",
+        "Measure time to display paywall"
       ],
-      "expected_result": "The user logs in successfully within 10 seconds"
+      "expected_result": "The paywall is displayed within 2 seconds."
     },
     {
       "test_id": "T_auto_6_1",
       "requirement_id": "FR_auto_6",
-      "scenario": "Subscription options view",
+      "scenario": "Download meditation session",
       "steps": [
-        "View the app's subscription options",
-        "Verify a clear message is displayed explaining benefits and costs"
+        "Launch the app",
+        "Tap the download button for a meditation session"
       ],
-      "expected_result": "The message is displayed within 2 seconds"
+      "expected_result": "The session is downloaded within 10 seconds for offline access."
     },
     {
       "test_id": "T_auto_6_2",
       "requirement_id": "FR_auto_6",
-      "scenario": "Non-subscribed user view",
+      "scenario": "Verify download time with slow internet",
       "steps": [
-        "View the app's subscription options as a non-subscribed user",
-        "Verify a clear message is displayed explaining benefits and costs"
+        "Launch the app",
+        "Simulate slow internet connection",
+        "Tap the download button for a meditation session"
       ],
-      "expected_result": "The message is displayed within 2 seconds"
+      "expected_result": "The session is downloaded within 10 seconds for offline access, or an appropriate error message is shown."
     },
     {
       "test_id": "T_auto_7_1",
       "requirement_id": "FR_auto_7",
-      "scenario": "Navigation away from meditation session",
+      "scenario": "Login loop error",
       "steps": [
-        "Start a meditation session",
-        "Navigate away from the session",
-        "Return to the session",
-        "Verify progress is retained"
+        "Launch the app",
+        "Simulate login error"
       ],
-      "expected_result": "The user can return to the session and continue from where they left off within 10 seconds"
+      "expected_result": "The app does not experience login loops more than 2 times in a row."
     },
     {
       "test_id": "T_auto_7_2",
       "requirement_id": "FR_auto_7",
-      "scenario": "Multiple navigation away from meditation session",
+      "scenario": "Subscription access error",
       "steps": [
-        "Start a meditation session",
-        "Navigate away from the session multiple times",
-        "Return to the session each time",
-        "Verify progress is retained"
+        "Launch the app",
+        "Simulate subscription access error"
       ],
-      "expected_result": "The user can return to the session and continue from where they left off within 10 seconds"
+      "expected_result": "The app does not experience subscription access errors more than 2 times in a row."
     },
     {
       "test_id": "T_auto_8_1",
       "requirement_id": "FR_auto_8",
-      "scenario": "Turning off haptics",
+      "scenario": "Loading meditation sessions",
       "steps": [
-        "Access the app's settings menu",
-        "Select the option to turn off haptics",
-        "Verify haptics are disabled immediately"
+        "Launch the app",
+        "Wait for meditation sessions to load"
       ],
-      "expected_result": "Haptics are disabled immediately"
+      "expected_result": "The loading animation does not exceed 5 seconds."
     },
     {
       "test_id": "T_auto_8_2",
       "requirement_id": "FR_auto_8",
-      "scenario": "Verifying haptics are off",
+      "scenario": "Verify loading time under slow conditions",
       "steps": [
-        "Access the app's settings menu",
-        "Verify haptics are disabled"
+        "Launch the app",
+        "Simulate slow internet connection",
+        "Wait for meditation sessions to load"
       ],
-      "expected_result": "Haptics remain disabled"
+      "expected_result": "The loading animation does not exceed 5 seconds, or an appropriate error message is shown."
     },
     {
       "test_id": "T_auto_9_1",
       "requirement_id": "FR_auto_9",
-      "scenario": "Subscription access error",
+      "scenario": "Continue meditation session",
       "steps": [
-        "Simulate a subscription access error",
-        "View the error message",
-        "Verify the message explains the cause and potential resolution"
+        "Launch the app",
+        "Navigate to meditation screen",
+        "Select option to continue previous session"
       ],
-      "expected_result": "The message is displayed within 5 seconds and explains the cause and potential resolution"
+      "expected_result": "The user can continue the meditation session from where they left off within 2 taps."
     },
     {
       "test_id": "T_auto_9_2",
       "requirement_id": "FR_auto_9",
-      "scenario": "Multiple subscription access errors",
+      "scenario": "Verify tap count to continue session",
       "steps": [
-        "Simulate multiple subscription access errors",
-        "View the error messages",
-        "Verify each message explains the cause and potential resolution"
+        "Launch the app",
+        "Navigate to meditation screen",
+        "Count taps to continue previous session"
       ],
-      "expected_result": "Each message is displayed within 5 seconds and explains the cause and potential resolution"
+      "expected_result": "It takes no more than 2 taps to continue the meditation session from where the user left off."
     },
     {
       "test_id": "T_auto_10_1",
       "requirement_id": "FR_auto_10",
-      "scenario": "Opted out of promotional emails",
+      "scenario": "Playback during screen lock",
       "steps": [
-        "Opt out of promotional emails",
-        "Verify email inbox for promotional emails"
+        "Launch the app",
+        "Start a meditation session",
+        "Lock the device screen"
       ],
-      "expected_result": "No more than 2 emails per week are received"
+      "expected_result": "Playback does not stop for more than 2 seconds."
     },
     {
       "test_id": "T_auto_10_2",
       "requirement_id": "FR_auto_10",
-      "scenario": "Opted in to promotional emails",
+      "scenario": "Verify playback pause during screen lock",
       "steps": [
-        "Opt in to promotional emails",
-        "Verify email inbox for promotional emails"
+        "Launch the app",
+        "Start a meditation session",
+        "Lock the device screen",
+        "Measure playback pause duration"
       ],
-      "expected_result": "The user receives promotional emails"
+      "expected_result": "Playback pause does not exceed 2 seconds."
     },
     {
       "test_id": "T_auto_11_1",
       "requirement_id": "FR_auto_11",
-      "scenario": "Login through linked account",
+      "scenario": "Offline access to unavailable session",
       "steps": [
-        "Attempt to log in through a linked account with correct credentials",
-        "Measure the time it takes to log in successfully"
+        "Launch the app",
+        "Attempt to play a meditation session without internet"
       ],
-      "expected_result": "The user logs in successfully within 5 seconds"
+      "expected_result": "A clear message is displayed within 2 seconds indicating the session is not available for offline access."
     },
     {
       "test_id": "T_auto_11_2",
       "requirement_id": "FR_auto_11",
-      "scenario": "Multiple login attempts through linked account",
+      "scenario": "Verify message display time",
       "steps": [
-        "Attempt to log in through a linked account with correct credentials multiple times",
-        "Measure the time it takes to log in successfully each time"
+        "Launch the app",
+        "Attempt to play a meditation session without internet",
+        "Measure time to display message"
       ],
-      "expected_result": "The user logs in successfully within 5 seconds each time"
+      "expected_result": "The clear message is displayed within 2 seconds."
     }
   ]
 }

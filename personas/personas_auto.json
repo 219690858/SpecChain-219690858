@@ -2,123 +2,122 @@
   "personas": [
     {
       "id": "P_auto_1",
-      "name": "Frustrated Mobile User",
-      "description": "A user experiencing frequent app crashes and freezing issues, seeking a stable and compatible meditation app.",
+      "name": "Frustrated Tech Troubleshooter",
+      "description": "A user who experiences app crashes and glitches, and tries troubleshooting steps to resolve the issues.",
       "derived_from_group": "A1",
       "goals": [
-        "Use a meditation app without interruptions",
-        "Track progress with Google Fit"
+        "Use the app for meditation and tracking without interruptions"
       ],
       "pain_points": [
-        "App crashes mid-session",
-        "Incompatibility with certain devices"
+        "App crashes and glitches, compatibility issues with device"
       ],
       "context": [
-        "Using a Motorola G86 device",
-        "Trying to integrate with Google Fit"
+        "Tries to troubleshoot issues by clearing cache, reinstalling, and seeking support"
       ],
       "constraints": [
-        "Limited technical expertise to troubleshoot issues"
+        "Limited by device compatibility and app version issues"
       ],
       "evidence_reviews": [
-        "rev_4dcc7bb3-c49a-49d2-b7dd-4b6f11abc8d8",
-        "rev_882ebd9a-ebb4-449f-b365-94ac1fce6669"
+        "rev_2a384b8d-9605-4e9e-8c99-6f465f7698cc",
+        "rev_400bc12f-0bb9-42e3-8965-4f77781941d0"
       ]
     },
     {
       "id": "P_auto_2",
-      "name": "Frustrated Audio Enthusiast",
-      "description": "A user seeking a meditative experience through an app, but is hindered by performance issues.",
+      "name": "Frustrated Speed Seeker",
+      "description": "A user seeking a smooth and fast experience with the app, but faces numerous bugs and performance issues.",
       "derived_from_group": "A2",
       "goals": [
-        "Enjoy a seamless and meditative audio experience"
+        "Fast and seamless app experience",
+        "Access to rich catalogue and tools"
       ],
       "pain_points": [
-        "App crashes and bugs disrupt the experience",
-        "Audio stream loss"
+        "Frequent bugs and glitches",
+        "Error messages despite stable internet connection"
       ],
       "context": [
-        "Using the app for relaxation and meditation"
+        "Using the app with a stable internet connection",
+        "Expecting a smooth and fast experience"
       ],
       "constraints": [
-        "Cannot trust the app due to inconsistencies"
+        "App performance issues on their device"
       ],
       "evidence_reviews": [
-        "rev_adb047ca-e012-4ebe-9426-78aac223f321",
-        "rev_2ed91fbf-1629-45fa-abb1-44d4b6781201"
+        "rev_910bfd42-c915-406c-a8a0-ddd28a78788f",
+        "rev_8becf559-afe6-4afd-9550-c40e31a3139e"
       ]
     },
     {
       "id": "P_auto_3",
-      "name": "Frustrated Mindfulness Seeker",
-      "description": "A person seeking mindfulness and stress relief through meditation apps, frustrated by intermittent functionality.",
+      "name": "Disappointed Headspace User",
+      "description": "A user who has seen a decline in the quality of Headspace's service and customer support.",
       "derived_from_group": "A3",
       "goals": [
-        "Find effective meditation and stress relief tools"
+        "Get effective meditation and mindfulness support"
       ],
       "pain_points": [
-        "Intermittent functionality of key features like white noise and binaural beats"
+        "Poor customer service",
+        "Decline in app quality"
       ],
       "context": [
-        "Heavy usage of meditation apps for stress relief"
+        "Heavy user of Headspace for stress relief"
       ],
       "constraints": [
-        "Reliability issues with app features"
+        "Limited time and patience for resolving issues"
       ],
       "evidence_reviews": [
-        "rev_923efb48-3b6d-46d0-be48-3d51bc9f2d5c",
-        "rev_0b398939-b4c1-4698-8f1b-5877ee96969d"
+        "rev_a722ba52-31d8-4dab-a8d4-0c05ae48c0ce",
+        "rev_f0b0c23b-8432-4377-bb9e-f412a676ff7e"
       ]
     },
     {
       "id": "P_auto_4",
-      "name": "Frustrated Meditation Enthusiast",
-      "description": "A meditation enthusiast who is frustrated with the app's performance issues and excessive email spam.",
+      "name": "Frustrated Meditator Fiona",
+      "description": "Fiona seeks a reliable meditation experience but faces consistent technical issues. She wants to focus on her mindfulness practice without interruptions.",
       "derived_from_group": "A4",
       "goals": [
-        "To use a meditation app that works seamlessly and provides a range of options"
+        "Use meditation app reliably",
+        "Achieve a meditative state without interruptions"
       ],
       "pain_points": [
-        "App performance issues",
-        "Excessive email spam"
+        "App crashes and loses audio stream",
+        "Inconsistent performance since AI features were added"
       ],
       "context": [
-        "Using a Samsung S25 Ultra",
-        "Interested in in-person counseling"
+        "Uses the app for meditation on her Samsung S25 Ultra"
       ],
       "constraints": [
-        "Technical issues with the app",
-        "Overwhelming email notifications"
+        "Technical issues hinder her meditation practice"
       ],
       "evidence_reviews": [
-        "rev_ecc2ca0f-7c36-4563-91cc-666de3b5e895",
-        "rev_b625a871-1ae6-47df-84c8-58974ae11fe1"
+        "rev_d26c0427-8c71-4618-8b1e-cfc1b1cbaee2",
+        "rev_379b7ab6-dead-469f-80e8-496978c6a812"
       ]
     },
     {
       "id": "P_auto_5",
-      "name": "Frustrated Technical User",
-      "description": "A user experiencing technical difficulties with login and connectivity issues despite having a stable internet connection.",
+      "name": "Frustrated Tech User",
+      "description": "A tech-savvy user experiencing frustrating app performance issues, including slow loading times, crashes, and syncing problems.",
       "derived_from_group": "A5",
       "goals": [
-        "To access and utilize the app's features without technical issues"
+        "Use the app efficiently",
+        "Track fitness data accurately"
       ],
       "pain_points": [
-        "Frequent logout issues",
-        "Error messages indicating offline status when connected",
-        "Difficulty logging in through linked accounts"
+        "App crashes frequently",
+        "Slow loading times",
+        "Syncing issues with Google Fit"
       ],
       "context": [
-        "Using the app with a stable internet connection",
-        "Linked to Google account or using email login"
+        "Using the app daily for fitness tracking",
+        "Recently updated the app"
       ],
       "constraints": [
-        "Technical issues hindering app usage",
-        "Lack of effective error resolution"
+        "Paid subscription, expects high performance"
       ],
       "evidence_reviews": [
-        "rev_08a446f9-9ab0-4eb6-858f-5d2c30377738",
-        "rev_9f4a1340-3120-487a-947e-90a8decbfc18"
+        "rev_c4c76a6a-6edd-4ec0-be88-17edcc76576a",
+        "rev_71113e4c-dbc8-4599-8053-0d11316d7bb6"
       ]
     }
   ]

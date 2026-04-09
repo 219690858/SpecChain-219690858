@@ -13,6 +13,8 @@ import requests
 
 MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"
 GROQ_BASE_URL = "https://api.groq.com/openai/v1/chat/completions"
+# Groq rejects completion max_tokens above this for this model (see API 400).
+_GROQ_COMPLETION_TOKEN_CAP = 8192
 
 
 def _repo_root() -> Path:
@@ -24,9 +26,23 @@ def _write_json(path: Path, obj: Any) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _groq_chat(api_key: str, messages: list[dict[str, str]], temperature: float = 0.2) -> str:
+def _groq_chat(
+    api_key: str,
+    messages: list[dict[str, str]],
+    temperature: float = 0.2,
+    *,
+    max_tokens: int = _GROQ_COMPLETION_TOKEN_CAP,
+    use_json_object_mode: bool = True,
+) -> str:
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    body = {"model": MODEL_NAME, "messages": messages, "temperature": temperature}
+    body: dict[str, Any] = {
+        "model": MODEL_NAME,
+        "messages": messages,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+    }
+    if use_json_object_mode:
+        body["response_format"] = {"type": "json_object"}
     max_attempts = 12
     for attempt in range(max_attempts):
         resp = requests.post(GROQ_BASE_URL, headers=headers, json=body, timeout=180)
@@ -43,7 +59,13 @@ def _groq_chat(api_key: str, messages: list[dict[str, str]], temperature: float 
             time.sleep(wait)
             continue
         if resp.status_code >= 400:
-            raise RuntimeError(f"Groq API error {resp.status_code}: {resp.text[:500]}")
+            # Some models reject json_object; retry once without it
+            if use_json_object_mode and resp.status_code == 400 and "response_format" in body:
+                del body["response_format"]
+                use_json_object_mode = False
+                resp = requests.post(GROQ_BASE_URL, headers=headers, json=body, timeout=180)
+            if resp.status_code >= 400:
+                raise RuntimeError(f"Groq API error {resp.status_code}: {resp.text[:500]}")
         data = resp.json()
         return data["choices"][0]["message"]["content"]
     raise RuntimeError("Groq API: rate limit retries exhausted")
@@ -117,15 +139,35 @@ def main() -> int:
         "- expected_result should match the requirement.\n"
     )
 
-    resp = _groq_chat(
-        api_key,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": json.dumps({"requirements": reqs})},
-        ],
-        temperature=0.25,
-    )
-    data = _extract_json(resp)
+    raw_cap = int(os.getenv("GROQ_MAX_TEST_TOKENS", str(_GROQ_COMPLETION_TOKEN_CAP)))
+    max_tokens = max(256, min(raw_cap, _GROQ_COMPLETION_TOKEN_CAP))
+    parse_retries = max(1, int(os.getenv("GROQ_TESTS_PARSE_RETRIES", "5")))
+
+    data: Any = None
+    last_parse_err: Exception | None = None
+    for p_attempt in range(parse_retries):
+        resp = _groq_chat(
+            api_key,
+            messages=[
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": json.dumps({"requirements": reqs})},
+            ],
+            temperature=0.25,
+            max_tokens=max_tokens,
+        )
+        try:
+            data = _extract_json(resp)
+            break
+        except json.JSONDecodeError as e:
+            last_parse_err = e
+            if p_attempt + 1 >= parse_retries:
+                raise RuntimeError(
+                    "Groq returned invalid or truncated JSON for tests after "
+                    f"{parse_retries} attempt(s). For this model max output is "
+                    f"{_GROQ_COMPLETION_TOKEN_CAP} tokens; retry later or shorten spec_auto.md."
+                ) from e
+            time.sleep(2.0 + p_attempt * 1.5)
+
     tests = data.get("tests", [])
     if not isinstance(tests, list) or not tests:
         raise RuntimeError("LLM did not return tests.")

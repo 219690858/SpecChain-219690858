@@ -1,23 +1,8 @@
 {
   "app_name": "Headspace",
   "app_id": "com.getsomeheadspace.android",
-  "collection_method": "google_play_scraper",
+  "collection_method": "google_play_scraper (import-existing)",
   "raw_dataset_path": "data/reviews_raw.jsonl",
   "raw_dataset_size": 1200,
-  "clean_dataset_path": "data/reviews_clean.jsonl",
-  "clean_dataset_size": 1110,
-  "collection_notes": "Google Play may limit the number of retrievable reviews; this script targets a configurable count and stops when no continuation token is available.",
-  "cleaning_decisions": {
-    "deduplication": "Remove duplicates by identical cleaned text.",
-    "drop_empty": "Drop reviews that become empty after cleaning.",
-    "drop_extremely_short": "Drop reviews with <= 3 tokens after cleaning.",
-    "remove_punctuation": "Remove punctuation by replacing non-alphanumeric characters with spaces.",
-    "remove_special_characters_and_emojis": "Remove/replace non-ASCII characters (covers most emojis/symbols).",
-    "numbers_to_text": "Convert digit sequences to words using num2words when available; otherwise keep digits.",
-    "whitespace_normalization": "Collapse multiple whitespace to single spaces; trim ends.",
-    "lowercasing": "Convert all text to lowercase.",
-    "stopwords": "Remove English stopwords using sklearn ENGLISH_STOP_WORDS (offline-friendly).",
-    "lemmatization": "Use WordNet lemmatizer if locally available; otherwise use Porter stemmer as an offline-friendly proxy."
-  },
-  "collected_at_utc": "2026-04-09T16:59:39.217821+00:00"
+  "collected_at_utc": "2026-04-09T21:53:13.292169+00:00"
 }
