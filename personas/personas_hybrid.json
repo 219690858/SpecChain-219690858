@@ -2,30 +2,140 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
+      "name": "Interrupted Session User",
+      "description": "A Headspace user who meditates on mobile but is blocked by crashes and freezes during sessions.",
       "derived_from_group": "H1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Finish meditation sessions without the app stopping",
+        "Keep a meditation streak without switching to the website"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "The app crashes mid-session",
+        "Clearing cache and reinstalling does not always fix stability"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Uses Android (including some Moto/other device builds)",
+        "Uses Headspace for daily mindfulness"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Limited patience for troubleshooting between sessions",
+        "Expects core playback to be reliable"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "rev_000d4c5f-a587-48b9-8e56-d8930289ef1e",
+        "rev_4dcc7bb3-c49a-49d2-b7dd-4b6f11abc8d8"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "notes": "The auto name was too generic so I renamed it. The rest is based on H1 reviews about crashes mid-session."
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "Audio-Focused Listener",
+      "description": "A user who relies on Headspace audio for relaxation and gets frustrated when sessions load slowly or audio drops.",
+      "derived_from_group": "H2",
+      "goals": [
+        "Start sessions quickly",
+        "Listen without losing the audio stream"
+      ],
+      "pain_points": [
+        "Content loads slowly or feels buggy",
+        "Audio stream can cut out during playback"
+      ],
+      "context": [
+        "Uses the app for meditation and wind-down",
+        "Often locks the screen or backgrounds the app while listening"
+      ],
+      "constraints": [
+        "Expects background playback to work",
+        "Does not want to babysit the app during a session"
+      ],
+      "evidence_reviews": [
+        "rev_00773d23-f7f7-4d27-a623-44a2df86436a",
+        "rev_08a42f88-0861-4b37-850c-2eb618bfcbb3"
+      ],
+      "notes": "Adjusted wording to focus on slow loading and audio dropouts, which is what H2 reviews mostly talk about."
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Paying User Seeking Clarity",
+      "description": "A user evaluating or paying for Headspace who worries about paywall clarity, refund support, and whether premium access works as expected.",
+      "derived_from_group": "H3",
+      "goals": [
+        "Understand trial and subscription terms before paying",
+        "Get refunds or account issues resolved without long delays"
+      ],
+      "pain_points": [
+        "Surprise paywall or card details before trial feels unfair",
+        "Refund or customer-service experiences can be slow or unclear",
+        "Paid sessions may stop early or fail to play reliably"
+      ],
+      "context": [
+        "Uses Headspace to manage stress and sleep",
+        "Has paid or attempted premium content"
+      ],
+      "constraints": [
+        "Needs transparent pricing and access rules",
+        "Wants a clear in-app path to help for billing problems"
+      ],
+      "evidence_reviews": [
+        "rev_923efb48-3b6d-46d0-be48-3d51bc9f2d5c",
+        "rev_0b398939-b4c1-4698-8f1b-5877ee96969d",
+        "rev_090c5121-ac02-4a7a-96b8-f1e7f965698f"
+      ],
+      "notes": "The auto version mentioned binaural beats and white noise which is more of a Calm thing. I changed the pain points to match what H3 reviews actually say about Headspace (trial, paywall, refunds)."
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Catalog Browser",
+      "description": "A user who explores Headspace content often and wants the app to stay responsive while browsing courses, sleep content, and recommendations.",
+      "derived_from_group": "H4",
+      "goals": [
+        "Find the right session quickly",
+        "Navigate the app without sluggish UI or repeated restarts"
+      ],
+      "pain_points": [
+        "App can feel bloated or unresponsive after major updates",
+        "Occasional frustration with how often the app needs restart"
+      ],
+      "context": [
+        "Uses multiple content types (sleep, stress, focus)",
+        "Opens and closes the app throughout the day"
+      ],
+      "constraints": [
+        "Needs predictable navigation and resume behavior",
+        "Wants marketing nudges controllable in-app, not via vague email rules"
+      ],
+      "evidence_reviews": [
+        "rev_00e72900-7fab-4371-8495-3d983d23f943",
+        "rev_01c8986e-bf87-4820-ac28-6561b5cc023a"
+      ],
+      "notes": "Removed email spam as a main pain point since that's not really an in-app issue. Focused on browsing and UI responsiveness instead."
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Locked-Out Returning User",
+      "description": "A user who cannot reliably access the full Headspace catalog because of login issues or false offline errors, even on a stable connection.",
+      "derived_from_group": "H5",
+      "goals": [
+        "Log in on first try with linked accounts",
+        "Open the catalog without bogus offline errors"
+      ],
+      "pain_points": [
+        "Sees 'offline' or not responding errors while online",
+        "Tracks may stop midway; login flows feel flaky"
+      ],
+      "context": [
+        "Uses Wi‑Fi/mobile data that works for other apps",
+        "May use Google or email-based login"
+      ],
+      "constraints": [
+        "Needs actionable error text and recovery steps",
+        "Does not want repeated reinstall cycles"
+      ],
+      "evidence_reviews": [
+        "rev_00d18851-619d-48d9-bcf4-d0f3184d3750",
+        "rev_08a446f9-9ab0-4eb6-858f-5d2c30377738"
+      ],
+      "notes": "Kept the same focus as auto but rewrote to match H5 complaints about false offline errors and login failures."
     }
   ]
 }

@@ -1,16 +1,267 @@
 {
   "tests": [
     {
-      "test_id": "T_hybrid_1",
-      "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Meditation session on Motorola G86 device",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Launch the app on a Motorola G86 device",
+        "Start a meditation session",
+        "Verify the app does not crash or freeze for at least 30 minutes"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The app does not crash or freeze during the meditation session",
+      "test_id": "T_hybrid_1_1",
+      "requirement_id": "FR_hybrid_1",
+      "notes": "Adapted from auto tests; hybrid IDs. Still checks long run without crash."
+    },
+    {
+      "scenario": "Meditation session with multiple interruptions",
+      "steps": [
+        "Launch the app on a Motorola G86 device",
+        "Start a meditation session",
+        "Lock and unlock the device multiple times",
+        "Minimize and maximize the app multiple times",
+        "Verify the app does not crash or freeze"
+      ],
+      "expected_result": "The app remains stable and does not crash or freeze",
+      "test_id": "T_hybrid_1_2",
+      "requirement_id": "FR_hybrid_1",
+      "notes": "Adapted from auto tests; hybrid IDs. Still checks long run without crash."
+    },
+    {
+      "scenario": "Loading meditation session on compatible device",
+      "steps": [
+        "Launch the app on a compatible device",
+        "Select a meditation session",
+        "Measure the time it takes for the session to start playing"
+      ],
+      "expected_result": "The meditation session starts playing within 5 seconds",
+      "test_id": "T_hybrid_2_1",
+      "requirement_id": "FR_hybrid_2",
+      "notes": "Same 5-second start idea as auto, no big change."
+    },
+    {
+      "scenario": "Loading meditation session on slow device",
+      "steps": [
+        "Launch the app on a slow device",
+        "Select a meditation session",
+        "Measure the time it takes for the session to start playing"
+      ],
+      "expected_result": "The meditation session starts playing within 5 seconds",
+      "test_id": "T_hybrid_2_2",
+      "requirement_id": "FR_hybrid_2",
+      "notes": "Same 5-second start idea as auto, no big change."
+    },
+    {
+      "scenario": "Offline access to downloaded meditation sessions",
+      "steps": [
+        "Download meditation sessions",
+        "Turn off device's internet connection",
+        "Access and play a downloaded meditation session"
+      ],
+      "expected_result": "The user can access and play the downloaded session for at least 24 hours",
+      "test_id": "T_hybrid_3_1",
+      "requirement_id": "FR_hybrid_3",
+      "notes": "Offline downloaded playback—steps mirror the automated version."
+    },
+    {
+      "scenario": "Offline access after 24 hours",
+      "steps": [
+        "Download meditation sessions",
+        "Turn off device's internet connection",
+        "Wait for 24 hours",
+        "Access and play a downloaded meditation session"
+      ],
+      "expected_result": "The user can still access and play the downloaded session",
+      "test_id": "T_hybrid_3_2",
+      "requirement_id": "FR_hybrid_3",
+      "notes": "Offline downloaded playback—steps mirror the automated version."
+    },
+    {
+      "scenario": "Playback during device lock",
+      "steps": [
+        "Start a meditation session",
+        "Lock the device",
+        "Verify the session continues playing for at least 30 minutes"
+      ],
+      "expected_result": "The session continues playing without interruption",
+      "test_id": "T_hybrid_4_1",
+      "requirement_id": "FR_hybrid_4",
+      "notes": "Lock / minimize playback; followed the auto structure."
+    },
+    {
+      "scenario": "Playback during app minimization",
+      "steps": [
+        "Start a meditation session",
+        "Minimize the app",
+        "Verify the session continues playing for at least 30 minutes"
+      ],
+      "expected_result": "The session continues playing without interruption",
+      "test_id": "T_hybrid_4_2",
+      "requirement_id": "FR_hybrid_4",
+      "notes": "Lock / minimize playback; followed the auto structure."
+    },
+    {
+      "scenario": "Login through linked account",
+      "steps": [
+        "Attempt to log in through a linked account with correct credentials",
+        "Measure the time it takes to log in successfully"
+      ],
+      "expected_result": "The user logs in successfully within 10 seconds",
+      "test_id": "T_hybrid_5_1",
+      "requirement_id": "FR_hybrid_5",
+      "notes": "Login without loops; kept the time bound."
+    },
+    {
+      "scenario": "Login through email",
+      "steps": [
+        "Attempt to log in through email with correct credentials",
+        "Measure the time it takes to log in successfully"
+      ],
+      "expected_result": "The user logs in successfully within 10 seconds",
+      "test_id": "T_hybrid_5_2",
+      "requirement_id": "FR_hybrid_5",
+      "notes": "Login without loops; kept the time bound."
+    },
+    {
+      "scenario": "Subscription options view",
+      "steps": [
+        "View the app's subscription options",
+        "Verify a clear message is displayed explaining benefits and costs"
+      ],
+      "expected_result": "The message is displayed within 2 seconds",
+      "test_id": "T_hybrid_6_1",
+      "requirement_id": "FR_hybrid_6",
+      "notes": "Subscription screen messaging clarity."
+    },
+    {
+      "scenario": "Non-subscribed user view",
+      "steps": [
+        "View the app's subscription options as a non-subscribed user",
+        "Verify a clear message is displayed explaining benefits and costs"
+      ],
+      "expected_result": "The message is displayed within 2 seconds",
+      "test_id": "T_hybrid_6_2",
+      "requirement_id": "FR_hybrid_6",
+      "notes": "Subscription screen messaging clarity."
+    },
+    {
+      "scenario": "Navigation away from meditation session",
+      "steps": [
+        "Start a meditation session",
+        "Navigate away from the session",
+        "Return to the session",
+        "Verify progress is retained"
+      ],
+      "expected_result": "The user can return to the session and continue from the last playback position within 10 seconds",
+      "test_id": "T_hybrid_7_1",
+      "requirement_id": "FR_hybrid_7",
+      "notes": "Resume after leave; expected result matches hybrid spec wording."
+    },
+    {
+      "scenario": "Multiple navigation away from meditation session",
+      "steps": [
+        "Start a meditation session",
+        "Navigate away from the session multiple times",
+        "Return to the session each time",
+        "Verify progress is retained"
+      ],
+      "expected_result": "The user can return to the session and continue from the last playback position within 10 seconds",
+      "test_id": "T_hybrid_7_2",
+      "requirement_id": "FR_hybrid_7",
+      "notes": "Resume after leave; expected result matches hybrid spec wording."
+    },
+    {
+      "scenario": "Turning off haptics",
+      "steps": [
+        "Access the app's settings menu",
+        "Select the option to turn off haptics",
+        "Verify haptics are disabled immediately"
+      ],
+      "expected_result": "Haptics are disabled immediately",
+      "test_id": "T_hybrid_8_1",
+      "requirement_id": "FR_hybrid_8",
+      "notes": "Turn off haptics from settings—same shape as auto."
+    },
+    {
+      "scenario": "Verifying haptics are off",
+      "steps": [
+        "Access the app's settings menu",
+        "Verify haptics are disabled"
+      ],
+      "expected_result": "Haptics remain disabled",
+      "test_id": "T_hybrid_8_2",
+      "requirement_id": "FR_hybrid_8",
+      "notes": "Turn off haptics from settings—same shape as auto."
+    },
+    {
+      "scenario": "Subscription access error",
+      "steps": [
+        "Simulate a subscription access error",
+        "View the error message",
+        "Verify the message explains the cause and at least one concrete next step"
+      ],
+      "expected_result": "The message is displayed within 5 seconds and states the cause and includes at least one concrete next step",
+      "test_id": "T_hybrid_9_1",
+      "requirement_id": "FR_hybrid_9",
+      "notes": "Stricter error copy; updated steps to match “concrete next step.”"
+    },
+    {
+      "scenario": "Multiple subscription access errors",
+      "steps": [
+        "Simulate multiple subscription access errors",
+        "View the error messages",
+        "Verify each message explains the cause and at least one concrete next step"
+      ],
+      "expected_result": "Each message is displayed within 5 seconds and states the cause and includes at least one concrete next step",
+      "test_id": "T_hybrid_9_2",
+      "requirement_id": "FR_hybrid_9",
+      "notes": "Stricter error copy; updated steps to match “concrete next step.”"
+    },
+    {
+      "scenario": "Disable promotional push notifications in-app",
+      "steps": [
+        "Open app settings",
+        "Open notification settings",
+        "Disable promotional notifications",
+        "Observe device notification log for 7 days"
+      ],
+      "expected_result": "No promotional push notifications are received for 7 days while the setting stays off",
+      "test_id": "T_hybrid_10_1",
+      "requirement_id": "FR_hybrid_10",
+      "notes": "Big change from auto: email-count test replaced with in-app promo notification toggle."
+    },
+    {
+      "scenario": "Re-enable promotional notifications",
+      "steps": [
+        "Disable promotional notifications",
+        "Re-enable promotional notifications",
+        "Trigger a promotional campaign if available in test environment"
+      ],
+      "expected_result": "Promotional push notifications are only allowed after the user re-enables the setting",
+      "test_id": "T_hybrid_10_2",
+      "requirement_id": "FR_hybrid_10",
+      "notes": "Big change from auto: email-count test replaced with in-app promo notification toggle."
+    },
+    {
+      "scenario": "Login through linked account",
+      "steps": [
+        "Attempt to log in through a linked account with correct credentials",
+        "Measure the time it takes to log in successfully"
+      ],
+      "expected_result": "The user logs in successfully within 5 seconds",
+      "test_id": "T_hybrid_11_1",
+      "requirement_id": "FR_hybrid_11",
+      "notes": "Linked login timing; similar intent to auto FR_auto_11."
+    },
+    {
+      "scenario": "Multiple login attempts through linked account",
+      "steps": [
+        "Attempt to log in through a linked account with correct credentials multiple times",
+        "Measure the time it takes to log in successfully each time"
+      ],
+      "expected_result": "The user logs in successfully within 5 seconds each time",
+      "test_id": "T_hybrid_11_2",
+      "requirement_id": "FR_hybrid_11",
+      "notes": "Linked login timing; similar intent to auto FR_auto_11."
     }
   ]
 }

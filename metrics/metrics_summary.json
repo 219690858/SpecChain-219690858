@@ -28,13 +28,13 @@
     "hybrid": {
       "pipeline": "hybrid",
       "dataset_size": 1110,
-      "persona_count": 1,
-      "requirements_count": 0,
-      "tests_count": 1,
-      "traceability_links": 6,
-      "review_coverage": 0.0036,
-      "traceability_ratio": 0.0,
-      "testability_rate": 0.0,
+      "persona_count": 5,
+      "requirements_count": 11,
+      "tests_count": 22,
+      "traceability_links": 1148,
+      "review_coverage": 1.0,
+      "traceability_ratio": 1.0,
+      "testability_rate": 1.0,
       "ambiguity_ratio": 0.0
     }
   }
